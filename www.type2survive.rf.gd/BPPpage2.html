@@ -1,0 +1,132 @@
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Teko', sans-serif;
+    }
+
+    .large-header {
+      position: relative;
+      width: 100%;
+      background: #111;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center center;
+      z-index: 1;
+    }
+
+    .demo .large-header {
+      background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+    }
+
+    img {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      top: 45%;
+      left: 34%;
+      //-webkit-transform: translate3d(-50%, -50%, 0);
+      //transform: translate3d(-50%, -50%, 0);
+    }
+    .main-title {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      color: #F9F1E9;
+      text-align: center;
+      top: 40%;
+      left: 50%;
+      -webkit-transform: translate3d(-50%, -50%, 0);
+      transform: translate3d(-50%, -50%, 0);
+    }
+    .demo .main-title {
+      text-transform: uppercase;
+      font-size: 4.2em;
+      letter-spacing: 0.1em;
+    }
+
+    .main-title .thin {
+      font-weight: 200;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .demo .main-title {
+        font-size: 3em;
+      }
+    }
+
+    #btn1 {
+      font-family: 'Teko', sans-serif;
+      font-size: 30px;
+      position: absolute;
+      top: 60%;
+      left: 35.5%;
+      transition-duration: 0.4s;
+      border-radius: 12px;
+width:200px;
+    }
+
+    #btn1:hover {
+      background: green;
+      border: 3.5px outset #FFA500;
+      font-size: 35px;
+      color: white;
+      left: 37.5%;
+    }
+    #btn2 {
+      font-family: 'Teko', sans-serif;
+      font-size: 30px;
+      position: absolute;
+      top: 60%;
+      left: 55.5%;
+      transition-duration: 0.4s;
+      border-radius: 12px;
+width:200px;
+    }
+
+    #btn2:hover {
+      background: coral;
+      border: 3.5px outset #FFA500;
+      font-size: 35px;
+      color: white;
+      left: 53.5%;
+    }
+    .subtitle {
+      position: absolute;
+      top: 48%;
+      left: 39.5%;
+      font-size: 30px;
+      color: white;
+
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container demo">
+    <div class="content">
+      <div id="large-header" class="large-header">
+        <canvas id="demo-canvas"></canvas>
+<div id="divs">
+<h1 class="main-title">Spacecraft propulsion</h1>
+        <img src='real.gif'>
+        <button onclick="alert('Great! In this webiste, you will find more interesting than what you know. Let's start the marvellous journey!');window.location.href='BPPpage3.html'" id='btn1'>Yes</button>
+	<button onclick="alert('No problem, you can find interesting information from our wesbite. Let's start the marvellous journey !');window.location.href='BPPpage3.html'" id='btn2'>No</button>
+</div>
+
+      </div>
+    </div>
+  </div>
+  <audio controls="" autoplay="" style="display:none">
+    <source src="space.mp3">
+</audio>
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js'></script>
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js'></script>
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js'></script>
+</body>
+
+</html>
