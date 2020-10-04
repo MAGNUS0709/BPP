@@ -1,0 +1,250 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Teko&amp;display=swap" rel="stylesheet">
+        <style>
+        body{
+            background-image:url(https://i.pinimg.com/originals/bd/38/24/bd3824d20a91a706157d9f667c8f9337.jpg);
+            text-align:center;
+            font-family:teko;
+        }
+        button{
+            font-family:teko;
+            font-size:30px;
+            border-radius: 50%;
+            transition-duration:0.4s;
+        }
+        button:hover{
+            color:white;
+            background:black;
+        }
+        span{
+            font-size:30px;
+        }
+        iframe{
+            position:absolute;
+            height:375px;
+            width:100%;
+            top:60%;
+            left:0%;
+        }
+        input{
+            font-size:30px;
+            font-family:teko;
+        }
+        big{
+            font-size:37px;
+        }
+        html, body {margin: 0; height: 100%; overflow: hidden}
+        </style>
+    </head>
+    <body>
+        <audio controls="" autoplay="" style="display:none">
+    <source src="space.mp3">
+</audio>
+<h1>Score: </h1><h1 id="score">0</h1><br><br>
+<div>
+    <span>1.</span><button class="1g one">A</button><button class='1b one' >B</button><button class='1b one'>C</button><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.</span><button class='2b two'>A</button><button class='2b two'>B</button><button class='2b two'>C</button><button class='2g two'>D</button><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.</span><button class="3b three">A</button><button class='3g three' >B</button><button class='3b three'>C</button><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.</span><button class='4b four'>A</button><button class='4b four'>B</button><button class='4b four'>C</button><button class='4g four'>D</button><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.</span><button class='5b five'>A</button><button class='5b five'>B</button><button class='5b five'>C</button><button class='5g five'>D</button><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6a.</span><button class='6ab sixa'>A</button><button class='6ab sixa'>B</button><button class='6ag sixa'>C</button><button class='6ab sixa'>D</button><button class='6ab sixa'>E</button><button class='6ab sixa'>F</button><button class='6ab sixa'>G</button><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6b.</span><button class='6bb sixb'>A</button><button class='6bb sixb'>B</button><button class='6bb sixb'>C</button><button class='6bb sixb'>D</button><button class='6bg sixb'>E</button><button class='6bb sixb'>F</button><button class='6bb sixb'>G</button><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6c.</span><button class='6cb sixc'>A</button><button class='6cb sixc'>B</button><button class='6cb sixc'>C</button><button class='6cb sixc'>D</button><button class='6cb sixc'>E</button><button class='6cg sixc'>F</button><button class='6cb sixc'>G</button><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6d.</span><button class='6db sixd'>A</button><button class='6db sixd'>B</button><button class='6db sixd'>C</button><button class='6dg sixd'>D</button><button class='6db sixd'>E</button><button class='6db sixd'>F</button><button class='6db sixd'>G</button><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.</span><button class='7b seven'>A</button><button class='7b seven'>B</button><button class='7g seven'>C</button><button class='7b seven'>D</button><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>8.</span><input class="eight input1"><button class="eight chk1">check answer</button><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9.</span><input class="nine input2"><button class="nine chk2">check answer</button><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10.</span><button class='10b ten'>A</button><button class='10b ten'>B</button><button class='10g ten'>C</button><button class='10b ten'>D</button><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11.</span><input class="eleven input3"><button class="eleven chk3">check answer</button><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12.</span><button class='12b twelve'>A</button><button class='12g twelve'>B</button><button class='12b twelve'>C</button><button class='12b twelve'>D</button><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13.</span><button class='13g thirteen'>A</button><button class='13b thirteen'>B</button><button class='13b thirteen'>C</button><button class='13b thirteen'>D</button><br><span>14</span><button class="true fourteen">True</button><button class="false fourteen">False</button>
+    <br><br><button class="big">Finish</button>
+    <iframe src="BPPqa.html"></iframe>
+    <div></div>
+</div>
+<script src="jquery-3.4.1.js"></script>
+<script>
+    alert("Background: You are building a rocket of your own, and you want a more powerful engine so that the rocket can fly higher and further. There are 17 questions in total. You can get an upgrade for the engine after answering 5 questions correctly. The tier of engine you have got will show after you pressed the 'Finish' button. Try to get as high level as you can! Good Luck! ")
+    var score=0
+    $('.1g').click(function(){
+        $(this).css('color','green'); 
+        $(".one").prop('disabled','true')
+        score=score+1
+        $('#score').html(score)
+    })
+    $('.1b').click(function(){
+        $(this).css('color','red'); 
+        $(".one").prop('disabled','true')
+    })
+    $('.2g').click(function(){
+        $(this).css('color','green'); 
+        $(".two").prop('disabled','true')
+        score=score+1
+        $('#score').html(score)
+    })
+    $('.2b').click(function(){
+        $(this).css('color','red'); 
+        $(".two").prop('disabled','true')
+    })
+    $('.3g').click(function(){
+        $(this).css('color','green'); 
+        $(".three").prop('disabled','true')
+                score=score+1
+        $('#score').html(score)
+    })
+    $('.3b').click(function(){
+        $(this).css('color','red'); 
+        $(".three").prop('disabled','true')
+    })
+    $('.4g').click(function(){
+        $(this).css('color','green'); 
+        $(".four").prop('disabled','true')
+                score=score+1
+        $('#score').html(score)
+    })
+    $('.4b').click(function(){
+        $(this).css('color','red'); 
+        $(".four").prop('disabled','true')
+    })
+    $('.5g').click(function(){
+        $(this).css('color','green'); 
+        $(".five").prop('disabled','true')
+                score=score+1
+        $('#score').html(score)
+    })
+    $('.5b').click(function(){
+        $(this).css('color','red'); 
+        $(".five").prop('disabled','true')
+    })
+    $('.6ag').click(function(){
+        $(this).css('color','green'); 
+        $(".sixa").prop('disabled','true')
+                score=score+1
+        $('#score').html(score)
+    })
+    $('.6ab').click(function(){
+        $(this).css('color','red'); 
+        $(".sixa").prop('disabled','true')
+    })
+    $('.6bg').click(function(){
+        $(this).css('color','green'); 
+        $(".sixb").prop('disabled','true')
+                score=score+1
+        $('#score').html(score)
+    })
+    $('.6bb').click(function(){
+        $(this).css('color','red'); 
+        $(".sixb").prop('disabled','true')
+    })
+    $('.6cg').click(function(){
+        $(this).css('color','green'); 
+        $(".sixc").prop('disabled','true')
+                score=score+1
+        $('#score').html(score)
+    })
+    $('.6cb').click(function(){
+        $(this).css('color','red'); 
+        $(".sixc").prop('disabled','true')
+    })
+    $('.6dg').click(function(){
+        $(this).css('color','green'); 
+        $(".sixd").prop('disabled','true')
+                score=score+1
+        $('#score').html(score)
+    })
+    $('.6db').click(function(){
+        $(this).css('color','red'); 
+        $(".sixd").prop('disabled','true')
+    })
+    $('.7g').click(function(){
+        $(this).css('color','green'); 
+        $(".seven").prop('disabled','true')
+                score=score+1
+        $('#score').html(score)
+    })
+        $('.7b').click(function(){
+        $(this).css('color','red'); 
+        $(".seven").prop('disabled','true')
+    })
+        $('.chk1').click(function(){
+        var i=$('.input1').val()
+        console.log(i)
+        if(i==="By accelerating a large mass by a small amount"){
+        $(this).css('color','green'); 
+        $(".eight").prop('disabled','true')
+                score=score+1
+        $('#score').html(score)
+        }else{
+        $(this).css('color','red'); 
+        $(".eight").prop('disabled','true')
+        }
+    })
+        $('.chk2').click(function(){
+        var w=$('.input2').val()
+        console.log(w)
+        if(w==="Space-time" || w==="Gravitation" || w==="Inertial frames" || w==="Quantum vacuum" || w==="Other fundamental physical phenomena"){
+        $(this).css('color','green'); 
+        $(".nine").prop('disabled','true')
+                score=score+1
+        $('#score').html(score)
+        }else{
+        $(this).css('color','red'); 
+        $(".nine").prop('disabled','true')
+        }
+    })
+    $('.10g').click(function(){
+        $(this).css('color','green'); 
+        $(".ten").prop('disabled','true')
+                score=score+1
+        $('#score').html(score)
+    })
+    $('.10b').click(function(){
+        $(this).css('color','red'); 
+        $(".ten").prop('disabled','true')
+    })
+    $('.chk3').click(function(){
+        var v=$('.input3').val()
+        console.log(v)
+        if(v==="Principle of operation of rocket engines"||v==="Types of rocket engines"||v==="Solid-propellant rocket"){
+        $(this).css('color','green'); 
+        $(".eleven").prop('disabled','true')
+                score=score+1
+        $('#score').html(score)
+        }else{
+        $(this).css('color','red'); 
+        $(".eleven").prop('disabled','true')
+        }
+    })
+    $('.12g').click(function(){
+        $(this).css('color','green'); 
+        $(".twelve").prop('disabled','true')
+                score=score+1
+        $('#score').html(score)
+    })
+    $('.12b').click(function(){
+        $(this).css('color','red'); 
+        $(".twelve").prop('disabled','true')
+    })
+    $('.13g').click(function(){
+        $(this).css('color','green'); 
+        $(".thirteen").prop('disabled','true')
+                score=score+1
+        $('#score').html(score)
+    })
+    $('.13b').click(function(){
+        $(this).css('color','red'); 
+        $(".thirteen").prop('disabled','true')
+    })
+        $('.true').click(function(){
+        $(this).css('color','red'); 
+        $(".fourteen").prop('disabled','true')
+
+    })
+        $('.false').click(function(){
+        $(this).css('color','green'); 
+        $(".fourteen").prop('disabled','true')
+                        score=score+1
+        $('#score').html(score)
+    })
+    $('.big').click(function(){
+        if (score<=5){
+            sessionStorage.setItem("type", 1);
+        }else if(score<=10){
+            sessionStorage.setItem("type", 2);
+        }else if(score<=15){
+            sessionStorage.setItem("type", 3);
+        }else{
+            sessionStorage.setItem("type", 4);
+        }
+        window.location.href="BPPresult.html"
+    })
+</script>
+
+    </body>
+</html>
